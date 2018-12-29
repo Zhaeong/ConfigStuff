@@ -1,4 +1,3 @@
-
 ;Removes the startup screen
 (setq inhibit-startup-screen t)
 
@@ -14,12 +13,24 @@
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 
-(load-theme 'misterioso)
-
-
-(add-to-list 'auto-mode-alist '("\\.vue\\'" . vue-mode))
-
 ;start neotree directory view with flexible width adjuster
 (neotree-toggle)
 (neotree-dir "d:/nodejsApps/")
 (setq neo-window-fixed-size nil)
+
+;Cosmetic
+(load-theme 'misterioso)
+
+; Set default font
+(set-face-attribute 'default nil
+                    :family "Consolas"
+                    :height 110
+                    :weight 'normal
+                    :width 'normal)
+
+
+;associate .vue files with vue-mode
+(add-to-list 'auto-mode-alist '("\\.vue\\'" . vue-mode))
+
+
+
