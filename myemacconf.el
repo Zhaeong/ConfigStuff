@@ -32,5 +32,7 @@
 ;associate .vue files with vue-mode
 (add-to-list 'auto-mode-alist '("\\.vue\\'" . vue-mode))
 
+;send the backups to another directory
+(setq backup-directory-alist '(("" . "~/.emacs.d/backup")))
 
 
