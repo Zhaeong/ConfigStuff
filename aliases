@@ -1,1 +1,3 @@
 alias clr='printf "\033c"'
+
+alias emacs='emacs -q -l "/home/owen/myConfig.el"'
