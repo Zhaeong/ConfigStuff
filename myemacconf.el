@@ -35,4 +35,9 @@
 ;send the backups to another directory
 (setq backup-directory-alist '(("" . "~/.emacs.d/backup")))
 
+(global-hl-line-mode +1)
+
+(setq isearch-allow-scroll t)
+
+(global-linum-mode t)
 
