@@ -35,9 +35,21 @@
 ;send the backups to another directory
 (setq backup-directory-alist '(("" . "~/.emacs.d/backup")))
 
+;highlighting current line
 (global-hl-line-mode +1)
 
+;allow scrolling when searching
 (setq isearch-allow-scroll t)
 
+;turn on line numbers
 (global-linum-mode t)
+
+(set-frame-font "iosevka 14" nil t)
+
+;turn on global company mode
+(add-hook 'after-init-hook 'global-company-mode)
+
+;turn off tabs
+(setq-default indent-tabs-mode nil)
+
 
