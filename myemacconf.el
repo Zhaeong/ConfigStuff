@@ -52,4 +52,6 @@
 ;turn off tabs
 (setq-default indent-tabs-mode nil)
 
+;deletes highlighted text if text input
+(delete-selection-mode 1)
 
