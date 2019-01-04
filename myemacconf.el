@@ -46,8 +46,8 @@
 
 (set-frame-font "iosevka 14" nil t)
 
-;turn on global company mode
-(add-hook 'after-init-hook 'global-company-mode)
+;enable global company mode
+(global-company-mode t)
 
 ;turn off tabs
 (setq-default indent-tabs-mode nil)
