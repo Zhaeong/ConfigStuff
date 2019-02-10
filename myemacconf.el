@@ -65,3 +65,5 @@
 ;deletes highlighted text if text input
 (delete-selection-mode 1)
 
+;start emacs full screen
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
