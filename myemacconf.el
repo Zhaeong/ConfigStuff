@@ -27,6 +27,7 @@
 (neotree-toggle)
 (neotree-dir "d:/nodejsApps/")
 (setq neo-window-fixed-size nil)
+(global-set-key [f8] 'neotree-toggle)
 
 ;Cosmetic
 (load-theme 'misterioso)
