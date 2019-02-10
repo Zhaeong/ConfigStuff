@@ -1,17 +1,27 @@
 ;Removes the startup screen
 (setq inhibit-startup-screen t)
 
-;Adds melpa packages
-(require 'package)
+;========This will auto install packages===============================
+; list the packages you want
+(setq package-list '(neotree company))
+
+; list the repositories containing them
+(setq package-archives '(("melpa" . "http://melpa.org/packages/")                         
+                         ))
+
+; activate all the packages (in particular autoloads)
 (package-initialize)
-(add-to-list 'package-archives
-                 '("melpa" . "http://melpa.org/packages/") t)
 
+; fetch the list of packages available 
+(unless package-archive-contents
+  (package-refresh-contents))
 
-;Local neotree packages for side browsing buffers
-(add-to-list 'load-path "c:/libs/neotree")
-(require 'neotree)
-(global-set-key [f8] 'neotree-toggle)
+; install the missing packages
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
+;======================================================================
+
 
 ;start neotree directory view with flexible width adjuster
 (neotree-toggle)
@@ -27,7 +37,6 @@
                     :height 110
                     :weight 'normal
                     :width 'normal)
-
 
 ;associate .vue files with vue-mode
 (add-to-list 'auto-mode-alist '("\\.vue\\'" . vue-mode))
