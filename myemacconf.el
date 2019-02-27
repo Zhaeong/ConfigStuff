@@ -48,6 +48,9 @@
 ;highlighting current line
 (global-hl-line-mode +1)
 
+;make it so that highlighting it doesn't change color of text
+(set-face-attribute 'hl-line nil :inherit nil :background "gray6")
+
 ;allow scrolling when searching
 (setq isearch-allow-scroll t)
 
