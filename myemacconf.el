@@ -70,3 +70,6 @@
 
 ;start emacs full screen
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
+
+;c indent style to not indent like gnu
+(c-set-offset 'substatement-open 0)
