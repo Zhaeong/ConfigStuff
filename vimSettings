@@ -1,5 +1,7 @@
 set number
 syntax on
+"caseless search
+set ignorecase
 colorscheme desert
 set backspace=indent,eol,start
 set ruler
