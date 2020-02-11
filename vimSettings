@@ -18,6 +18,12 @@ set shiftwidth=2    " Indents will have a width of 4
 set softtabstop=2   " Sets the number of columns for a TAB
 
 set expandtab       " Expand TABs to spaces
+
+
+"Binding clipboard copypaste to other button
+noremap , "*y
+noremap . "*p
+
 if has("gui_running")
   if has("gui_gtk2")
     set guifont=Inconsolata\ 12
