@@ -32,6 +32,13 @@ noremap . "*p
 
 noremap <F2>  :NERDTreeToggle<CR>
 
+
+"for code completion
+"AutoComplPop 
+"https://www.vim.org/scripts/script.php?script_id=1879
+
+"set completeopt=longest,menuone
+
 if has("gui_running")
   if has("gui_gtk2")
     set guifont=Inconsolata\ 12
