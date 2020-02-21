@@ -32,6 +32,8 @@ noremap . "*p
 
 noremap <F2>  :NERDTreeToggle<CR>
 
+"formats document
+map <F5> gg=G<C-o><C-o>
 
 "for code completion
 "AutoComplPop 
