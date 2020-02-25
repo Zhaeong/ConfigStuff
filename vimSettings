@@ -3,6 +3,10 @@ set nocompatible
 
 set number
 syntax on
+
+"autoindent on new line
+set autoindent
+
 "caseless search
 set ignorecase
 colorscheme desert
@@ -11,33 +15,33 @@ set ruler
 set showmode
 "set full screen
 set lines=999 columns=999
-set tabstop=2       " The width of a TAB is set to 4.
+set tabstop=4       " The width of a TAB is set to 4.
                     " Still it is a \t. It is just that
                     " Vim will interpret it to be having
                     " a width of 4.
 
-set shiftwidth=2    " Indents will have a width of 4
+set shiftwidth=4    " Indents will have a width of 4
 
-set softtabstop=2   " Sets the number of columns for a TAB
+set softtabstop=4   " Sets the number of columns for a TAB
 
 set expandtab       " Expand TABs to spaces
-
-"
-"Mappings
-"
-
-"Binding clipboard copypaste to other button
-noremap , "*y
-noremap . "*p
 
 noremap <F2>  :NERDTreeToggle<CR>
 
 "formats document
 map <F5> gg=G<C-o><C-o>
 
+"Binding clipboard copypaste to other button
+noremap , "*y
+noremap . "*p
+
+"paste same word over multiple other words
+xnoremap p pgvy
+
 "for code completion
 "AutoComplPop 
 "https://www.vim.org/scripts/script.php?script_id=1879
+
 
 "set completeopt=longest,menuone
 
