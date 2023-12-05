@@ -37,7 +37,12 @@ vim.g.mapleader = " "
 
 local set = vim.opt
 
-set.number = true
+set.number = true -- Show line number
+
+set.tabstop = 2 -- A TAB character looks like 4 spaces
+set.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB character
+set.softtabstop = 2 -- Number of spaces inserted instead of a TAB character
+set.shiftwidth = 2 -- Number of spaces inserted when indenting
 
 -- Telescope --------------------------------------------------
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
