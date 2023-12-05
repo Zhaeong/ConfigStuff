@@ -1,5 +1,7 @@
 print("Loaded Owen Config")
 
+vim.cmd("colorscheme kanagawa")
+
 --[[
   Installed Plugins:
 SET XDG_CONFIG_HOME=C:\bin
@@ -9,6 +11,7 @@ XDG_CONFIG_HOME\pack\owenolugins\start
 #owenplugins\opt is optional for lazy loading
 
 and then git clone these repos
+ rebelot/kanagawa.nvim
  hrsh7th/cmp-buffer
  hrsh7th/cmp-cmdline
  hrsh7th/cmp-nvim-lsp
