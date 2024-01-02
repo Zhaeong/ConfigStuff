@@ -44,6 +44,11 @@ set.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB
 set.softtabstop = 2 -- Number of spaces inserted instead of a TAB character
 set.shiftwidth = 2 -- Number of spaces inserted when indenting
 
+vim.keymap.set("n", '<F1>', '<ESC>')
+vim.keymap.set("i", '<F1>', '<ESC>')
+vim.keymap.set("v", '<F1>', '<ESC>')
+vim.keymap.set("x", '<F1>', '<ESC>')
+
 -- Telescope --------------------------------------------------
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 local builtin = require('telescope.builtin')
