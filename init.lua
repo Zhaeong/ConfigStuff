@@ -213,4 +213,7 @@ require('lspconfig')['clangd'].setup {
     capabilities = capabilities
 }
 
+-- Animation when scrollin
+-- https://github.com/echasnovski/mini.animate
+require('mini.animate').setup()
 
