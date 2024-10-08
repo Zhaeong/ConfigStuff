@@ -87,6 +87,8 @@ require'lspconfig'.clangd.setup {}
 
 -- Setup language servers.
 local lspconfig = require('lspconfig')
+
+-- pyright requires: npm i -g pyright
 lspconfig.pyright.setup {}
 lspconfig.tsserver.setup {}
 lspconfig.rust_analyzer.setup {
@@ -215,5 +217,5 @@ require('lspconfig')['clangd'].setup {
 
 -- Animation when scrollin
 -- https://github.com/echasnovski/mini.animate
-require('mini.animate').setup()
+-- require('mini.animate').setup()
 
